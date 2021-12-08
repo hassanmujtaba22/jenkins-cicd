@@ -9,8 +9,8 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/edudemic"
-                sh "sudo cp -r jenkins-cicd/build/ /var/www/edudemic/"
+                sh "sudo npm start"
+                // sh "sudo cp -r jenkins-cicd/build/ /var/www/edudemic/"
                 // sh "pm2 start npm --name "next-app" -- start"
             }
         }
